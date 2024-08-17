@@ -1,0 +1,16 @@
+.margin_top_20percent {
+	margin-top:20%;
+}
+.margin_left_20percent {
+	margin-left:20%;
+}
+.margin_left_5percent {
+	margin-left:5%;
+}
+.margin_right_5percent {
+	margin-right:5%;
+}
+.input[type=text]:disabled {
+    background: #ffffff;
+}
+

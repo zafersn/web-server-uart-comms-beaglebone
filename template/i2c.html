@@ -1,0 +1,566 @@
+<html>
+<head>
+<title>Web to serial</title>
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+
+
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BeagleBone Comminations</title>
+
+	
+	<link href= "static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="static/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <link href="static/dist/css/sb-admin-2.css" rel="stylesheet">
+	
+	<link href="static/vendor/font-awesome/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+	<link href="static/vendor/morrisjs/morris.css" rel="stylesheet">
+	<script src="static/vendor/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">BeagleBone v1.0 </a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Zafer ŞEN</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Test proje denemeleri gerçekleşmetedir...</div>
+                            </a>
+                        </li>
+                      
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+						 <li>
+                            <a href="sayfa.html"><i class="fa fa-dashboard fa-fw"></i> Usart</a>
+                        </li>
+                        <li>
+                            <a href="i2c.html"><i class="fa fa-dashboard fa-fw"></i> I2C</a>
+                        </li>						
+                        <li>
+                            <a href="ethernet.html"><i class="fa fa-bar-chart-o fa-fw"></i> Ethernet</a>
+                           
+                            <!-- /.nav-second-level -->
+                        </li>
+                       
+                            <!-- /.nav-second-level -->
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">Blank Page</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login Page</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+		 
+        </nav>
+		 <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">BeagleBone I2C Communation</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             I2C Data
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                               
+							    <div class="col-lg-6">
+                                 <div class="panel panel-default">
+										<div class="panel-heading">
+										Send Data Input
+										</div>
+										<div class="panel-body">
+                                           
+										    <div class="form-group">
+											<div class="row">
+											<div class="col-sm-4" >
+											<div class="form-group">
+                                            <label>I2C Yazma Metotları</label>
+                                           <select title='I2C Write Method' class="form-control">
+												<option title="write16( reg, value) &#013;  Writes a 16-bit value to the specified register/address pair">write16</option>
+												<option title="write8( reg, value) &#013; Writes an 8-bit value to the specified register/address">write8</option>
+												<option title="writeList( reg, list) &#013; Writes an array of bytes using I2C format">writeList</option>
+											</select>
+											</div>
+											</div>    
+											<div class="col-sm-4" >
+											<label>Register Address</label>
+											<input id="textInput" class="form-control" placeholder="Enter Register Address">
+											</div>  
+											<div class="col-sm-4" >
+											<label>Write Data Input</label>
+											<input id="textInput" class="form-control" placeholder="Enter Data">
+											</div> 											
+											</div>  
+											<div class="col-sm-12" >
+											<button type="button" id="btn_send_i2c_data" class="btn btn-primary btn-md btn-block">Write Data</button>
+											</div> 
+									
+                                          
+											</div>                                       									
+                                        <!-- <button type="reset" class="btn btn-default">Reset Button</button> -->
+										</div>
+									</div>
+									<!-- /.col-lg-6 (nested) -->
+                             
+                                </div>
+								
+							      <div class="col-lg-6">
+													
+											<div class="panel panel-default">
+										<div class="panel-heading">
+										Read Data BeagleBone
+										</div>
+											<div class="panel-body">
+											<div class="row">
+											<div class="col-sm-4" >
+											<div class="form-group">
+                                            <label>I2C Okuma Metotları</label>
+                                           <select title='I2C Write Method' class="form-control">
+												<option title="readList(reg, length) &#013; Read a list of bytes from the I2C device">readList</option>
+												<option title="readS16(reg) &#013; Reads a signed 16-bit value from the I2C device">readS16</option>
+												<option title="readS16Rev(reg) &#013; Reads a signed 16-bit value from the I2C device with rev byte order">readS16Rev</option>
+												<option title="readS8(reg) &#013; Reads a signed byte from the I2C device">readS8</option>
+												<option title="readU16(reg) &#013; Reads an unsigned 16-bit value from the I2C device">readU16</option>
+												<option title="readU16Rev(reg) &#013; Reads an unsigned 16-bit value from the I2C device with rev byte order">readU16Rev</option>
+												<option title="readU8(reg) &#013; Read an unsigned byte from the I2C device">readU8</option>
+											</select>
+											</div>
+											</div>   
+											<div class="col-sm-4" >
+												<label>Register Address</label>
+												<input id="textInput" class="form-control" placeholder="Enter Register Address">	
+											</div>											
+											<div class="col-sm-4" >
+											 
+												<label>
+													Read value
+												</label>
+												<input id="output" class="form-control" placeholder="Read Data" disabled style=" background: #ffffff;">														
+											</div>	
+											</div> 
+											<div class="col-sm-12" >
+											<button type="button" id="btn_start_read_i2c_data" class="btn btn-primary btn-md btn-block">Start Read</button>
+											</div> 
+											</div>
+												</div>
+									</div>
+							
+							
+							
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <i class="fa fa-bar-chart-o fa-fw"></i>    Area Chart Example
+						   <div class="pull-right">
+                                <div class="btn-group">
+									
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                        Actions
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+									
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                          <div class="panel-body">
+							<p id="s"></p>
+                            <div id="area-i2c"></div>
+							<div id="reloadStatus-i2c">
+							<pre id="code-i2c" class="prettyprint linenums">
+							
+                        </div>
+							<div class="pull-right">
+							<button type="button" id="btn_stop_graph_data" class="btn btn-primary btn-md btn-block">Stop Graph Data</button>
+							</div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+					  
+                </div>
+            </div>
+        </div>
+		</div>
+		<div id="mainbody" style="background-color:#FFFFFF;margin-left:auto;margin-right:auto;">
+	
+
+		</div>
+ <script src="static/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="static/vendor/metisMenu/metisMenu.min.js"></script>
+
+	<script src="static/vendor/raphael/raphael.min.js"></script>
+    <script src="static/vendor/morrisjs/morris.min.js"></script>
+    <script src="static/data/morris-data.js"></script>
+	
+    <!-- Custom Theme JavaScript -->
+
+    <script src="static/dist/js/sb-admin-2.js"></script>
+	<script>
+var ws = new WebSocket("ws://"+location.hostname+":"+location.port+"/websocket");
+ws.onopen = function() {
+   ws.send("sayfa_i2c");
+};
+
+ws.ononerror =function (event) {
+		document.getElementById("print").innerHTML ="\""+event.data+"\"" +"  hatası oluştu.";
+    };
+	
+ws.onclose = function (event) {
+        var reason;
+        alert(event.code);
+        if (event.code == 1000)
+            reason = "Normal closure, meaning that the purpose for which the connection was established has been fulfilled.";
+        else if(event.code == 1001)
+            reason = "An endpoint is \"going away\", such as a server going down or a browser having navigated away from a page.";
+        else if(event.code == 1002)
+            reason = "An endpoint is terminating the connection due to a protocol error";
+        else if(event.code == 1003)
+            reason = "An endpoint is terminating the connection because it has received a type of data it cannot accept (e.g., an endpoint that understands only text data MAY send this if it receives a binary message).";
+        else if(event.code == 1004)
+            reason = "Reserved. The specific meaning might be defined in the future.";
+        else if(event.code == 1005)
+            reason = "No status code was actually present.";
+        else if(event.code == 1006)
+           reason = "The connection was closed abnormally, e.g., without sending or receiving a Close control frame";
+        else if(event.code == 1007)
+            reason = "An endpoint is terminating the connection because it has received data within a message that was not consistent with the type of the message (e.g., non-UTF-8 [http://tools.ietf.org/html/rfc3629] data within a text message).";
+        else if(event.code == 1008)
+            reason = "An endpoint is terminating the connection because it has received a message that \"violates its policy\". This reason is given either if there is no other sutible reason, or if there is a need to hide specific details about the policy.";
+        else if(event.code == 1009)
+           reason = "An endpoint is terminating the connection because it has received a message that is too big for it to process.";
+        else if(event.code == 1010) // Note that this status code is not used by the server, because it can fail the WebSocket handshake instead.
+            reason = "An endpoint (client) is terminating the connection because it has expected the server to negotiate one or more extension, but the server didn't return them in the response message of the WebSocket handshake. <br /> Specifically, the extensions that are needed are: " + event.reason;
+        else if(event.code == 1011)
+            reason = "A server is terminating the connection because it encountered an unexpected condition that prevented it from fulfilling the request.";
+        else if(event.code == 1015)
+            reason = "The connection was closed due to a failure to perform a TLS handshake (e.g., the server certificate can't be verified).";
+        else
+            reason = "Unknown reason";
+
+        document.getElementById("print").innerHTML ="Soket bağlantısı kapatıldı. Hata: "+"\""+reason+"\"";
+    };
+	
+
+var nReloads = 0, x=0, nV=10,gel=0;
+var ret = [];
+function data(offset) {
+	x++
+    ret.push({
+      x: x,
+      y: offset,//Math.sin(Math.PI * v / 180).toFixed(4),
+    //  z: Math.cos(Math.PI * v / 180).toFixed(4)
+    });
+  
+  return ret;
+}
+var graph = Morris.Line({
+    element: 'area-i2c',
+    data: data(0),
+    xkey: 'x',
+    ykeys: ['y'],
+    labels: ['Read Data: '],
+    hideHover: true,
+        resize: true
+});
+var buttonRead=false;
+ws.onmessage = function (evt) {
+	<!-- $('#output').val($('#output').val()+evt.data); -->
+	
+	var gelenData= evt.data;
+	if (isNaN(gelenData))
+	{ 
+	if(gelenData.substring(0,1)=="i"){
+	if( Boolean(buttonRead)){
+	document.getElementById("output").value = gelenData.substring(1);
+	/*graph_data.push({per:a++,value: gelenData});
+	shoreham_g.setData(graph_data);*/
+	nReloads++;
+	//nX++;
+	//nV=Math.floor((Math.random() * 100) + 1);
+	var isNumber = Number(gelenData.substring(1));
+	if (!isNaN(isNumber)) {
+	gel=isNumber;
+	graph.setData(data(gel));
+	$('#reloadStatus').text(nReloads + ' reloads');
+	}
+	//document.getElementById("s").innerHTML ="\""+a+"\"";
+	}
+	}
+	}
+	
+	
+};
+function update() {
+  nReloads++;
+	nV=Math.floor((Math.random() * 100) + 1);
+	
+	graph.setData(data(nV));
+  $('#reloadStatus').text(nReloads + ' reloads');
+  $("#output").text(nReloads);
+  if(nReloads==40){
+  clearInterval(myVar);
+  }
+  
+}
+
+
+//setInterval(update, 100);
+
+//var myVar = setInterval(function(){ update() }, 600);
+
+
+
+// i2c data	gonder
+var send=document.getElementById('btn_send_i2c_data');
+if(send){
+send.addEventListener("click", sendDataFunction);
+}
+//grifikde data gostermeyi durdur
+var stop=document.getElementById('btn_stop_graph_data');
+if(stop){
+stop.addEventListener("click", stopGrapDataFunction);
+}
+
+//i2c  data okumayı başlat durdur
+var read=document.getElementById('btn_start_read_i2c_data');
+if(read){
+read.addEventListener("click", startI2CReadDataFunction);
+
+}
+
+function startI2CReadDataFunction() {
+   // document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+ //nReloads=40;
+ if(read.innerHTML=="Start Read"){
+ read.innerHTML="Stop Read ";
+ buttonRead=true;
+ }else {
+ read.innerHTML="Start Read";
+ buttonRead=false;
+ }
+}
+
+
+function stopGrapDataFunction() {
+   // document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+ clearInterval(myVar);
+ //nReloads=40;
+}
+
+function sendDataFunction() {
+   // document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+   var form = document.getElementById("textInput");
+   ws.send("i2c"+form.value);
+   document.getElementById("print").innerHTML ="\""+form.value+"\"" +" gönderildi.";
+}	
+</script>
+
+</body>
+</html>
+
+
+
+
+    
